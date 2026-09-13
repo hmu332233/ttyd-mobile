@@ -577,8 +577,4 @@
   document.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "visible") { render(); probeAll(); }
   });
-
-  if ("serviceWorker" in navigator && location.protocol === "https:") {
-    navigator.serviceWorker.register("/sw.js").catch(() => {});
-  }
 })();

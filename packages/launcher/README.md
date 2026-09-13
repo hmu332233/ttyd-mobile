@@ -14,7 +14,6 @@ ttyd 터미널 주소를 저장해 두고 한 번에 열어 주는 정적 PWA입
   ```
 - **공유**: 카드 메뉴에서 등록 링크를 만들어 다른 기기로 보낼 수 있습니다.
 - **백업**: 설정 화면에서 전체 목록을 JSON으로 내보내고, 다시 가져올 수 있습니다.
-- **오프라인**: Service Worker가 앱 셸을 캐시하므로, 네트워크가 없어도 런처 화면은 표시됩니다.
 
 UI는 [Vapor 디자인 시스템](https://vapor-ui.goorm.io)을 React 없이 사용합니다. 디자인 토큰은 `@vapor-ui/core`가 배포하는 공식 테마 CSS를 jsDelivr에서 그대로 불러오고, 버튼이나 시트 같은 컴포넌트 스타일만 `public/vapor.css`에 바닐라 CSS로 옮겨 두었습니다.
 
@@ -24,15 +23,13 @@ UI는 [Vapor 디자인 시스템](https://vapor-ui.goorm.io)을 React 없이 사
 npm run dev          # http://127.0.0.1:8090/
 ```
 
-Service Worker는 https 환경에서만 등록되도록 제한해 두었기 때문에, 로컬에서 개발하는 동안에는 캐시가 개입하지 않습니다.
-
 ## 배포
 
 ```bash
 npm run deploy       # wrangler pages deploy public --project-name terminals-launcher
 ```
 
-처음 배포할 때는 `npx wrangler login`으로 한 번 로그인해야 합니다. 이후에는 배포할 때마다 `sw.js`의 `CACHE` 값을 올려야 이미 설치된 기기의 캐시가 갱신됩니다.
+처음 배포할 때는 `npx wrangler login`으로 한 번 로그인해야 합니다.
 
 ## 데이터
 
