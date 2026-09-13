@@ -16,7 +16,7 @@ ttyd 터미널 주소를 저장해 두고 한 번에 열어 주는 정적 PWA입
 - **백업**: 설정 화면에서 전체 목록을 JSON으로 내보내고, 다시 가져올 수 있습니다.
 - **오프라인**: Service Worker가 앱 셸을 캐시하므로, 네트워크가 없어도 런처 화면은 표시됩니다.
 
-UI는 구름의 [Vapor 디자인 시스템](https://vapor-ui.goorm.io)을 React 없이 바닐라 CSS로 옮겨서 구현했습니다. 디자인 토큰과 컴포넌트 스타일은 `public/vapor.css`에 있습니다.
+UI는 [Vapor 디자인 시스템](https://vapor-ui.goorm.io)을 React 없이 사용합니다. 디자인 토큰은 `@vapor-ui/core`가 배포하는 공식 테마 CSS를 jsDelivr에서 그대로 불러오고, 버튼이나 시트 같은 컴포넌트 스타일만 `public/vapor.css`에 바닐라 CSS로 옮겨 두었습니다.
 
 ## 로컬 확인
 
