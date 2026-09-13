@@ -1,0 +1,24 @@
+{
+  "name": "Terminals",
+  "short_name": "Terminals",
+  "description": "ttyd 터미널 런처. 저장한 터미널 주소를 한 번에 연다.",
+  "id": "/",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#2A72E5",
+  "lang": "ko",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icons/maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ],
+  "share_target": {
+    "action": "/",
+    "method": "GET",
+    "params": { "url": "add", "title": "label", "text": "text" }
+  }
+}

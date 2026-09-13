@@ -1,0 +1,10 @@
+{
+  "name": "@ttyd-html/terminal",
+  "version": "0.2.0",
+  "private": true,
+  "description": "ttyd 1.7.7용 모바일 커스텀 index.html. 자동 재접속, 모바일 툴바, composer.",
+  "scripts": {
+    "build": "node build-mobile-html.mjs",
+    "serve": "ttyd -i 127.0.0.1 -W -I $PWD/ttyd-mobile.html bash"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "ttyd-html",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Android에서 Tailscale 너머 Mac 터미널(herdr)을 쓰기 위한 ttyd 모바일 클라이언트와 PWA 런처",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build:terminal": "npm run build -w @ttyd-html/terminal",
+    "serve:terminal": "npm run serve -w @ttyd-html/terminal",
+    "dev:launcher": "npm run dev -w @ttyd-html/launcher",
+    "deploy:launcher": "npm run deploy -w @ttyd-html/launcher"
+  },
+  "license": "MIT"
+}
