@@ -1,10 +1,10 @@
 {
-  "name": "@ttyd-html/launcher",
+  "name": "@ttyd-mobile/launcher",
   "version": "0.3.0",
   "private": true,
   "description": "정적 PWA 런처. 저장한 ttyd 터미널 주소를 한 번에 연다.",
   "scripts": {
-    "dev": "python3 -m http.server 8090 --directory public",
+    "dev": "node dev.mjs",
     "deploy": "npx wrangler pages deploy public --project-name terminals-launcher"
   }
 }
