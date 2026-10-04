@@ -5,6 +5,7 @@
   "description": "정적 PWA 런처. 저장한 ttyd 터미널 주소를 한 번에 연다.",
   "scripts": {
     "dev": "node dev.mjs",
-    "deploy": "npx wrangler pages deploy public --project-name terminals-launcher"
+    "deploy": "npx wrangler deploy",
+    "preview": "npx wrangler dev"
   }
 }

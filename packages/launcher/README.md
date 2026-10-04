@@ -94,7 +94,7 @@ Node.js와 npm이 필요합니다.
    npm run deploy
    ```
 
-   이 명령은 `public` 디렉터리를 Cloudflare Pages의 `terminals-launcher` 프로젝트에 배포합니다.
+   이 명령은 `wrangler.jsonc` 설정에 따라 `public` 디렉터리를 Cloudflare Workers의 `terminals-launcher`에 정적 에셋으로 배포합니다.
 
 ## 데이터 형식
 
