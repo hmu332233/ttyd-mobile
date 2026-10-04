@@ -152,6 +152,8 @@
       term.element.dispatchEvent(new WheelEvent("wheel", {
         deltaY,
         deltaMode: WheelEvent.DOM_DELTA_PIXEL,
+        clientX: event.touches[0].clientX,
+        clientY: event.touches[0].clientY,
         bubbles: true,
         cancelable: true,
       }));
